@@ -34,6 +34,11 @@
 #include <inttypes.h>
 #include "qdMetaData.h"
 
+#if defined(__clang__)
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wsign-conversion"
+#endif
+
 int setMetaData(private_handle_t *handle, DispParamType paramType,
                                                     void *param) {
     if (!handle) {

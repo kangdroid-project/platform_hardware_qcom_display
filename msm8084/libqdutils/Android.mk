@@ -27,7 +27,7 @@ LOCAL_C_INCLUDES                := $(common_includes)
 LOCAL_ADDITIONAL_DEPENDENCIES   := $(common_deps)
 LOCAL_SRC_FILES                 := qdMetaData.cpp
 LOCAL_CFLAGS                    := $(common_flags)
-LOCAL_CFLAGS                    += -DLOG_TAG=\"DisplayMetaData\"
+LOCAL_CFLAGS                    += -DLOG_TAG=\"DisplayMetaData\" -Wno-unused-variable
 LOCAL_MODULE_TAGS               := optional
 LOCAL_MODULE                    := libqdMetaData
 include $(BUILD_SHARED_LIBRARY)
